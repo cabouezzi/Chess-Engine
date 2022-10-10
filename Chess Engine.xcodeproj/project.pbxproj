@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		1467A3EF28F4B3A700EB75A2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1467A3EE28F4B3A700EB75A2 /* main.cpp */; };
+		1467A3FD28F4B5BC00EB75A2 /* Board.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1467A3FB28F4B5BC00EB75A2 /* Board.cpp */; };
+		1467A40128F4B61800EB75A2 /* FEN.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1467A3FF28F4B61800EB75A2 /* FEN.cpp */; };
+		1467A40728F4B6E000EB75A2 /* Move.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1467A40528F4B6E000EB75A2 /* Move.cpp */; };
+		1467A40B28F4B71F00EB75A2 /* PGN.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1467A40928F4B71F00EB75A2 /* PGN.cpp */; };
+		1467A40E28F4B83100EB75A2 /* Print.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1467A40C28F4B83100EB75A2 /* Print.cpp */; };
+		1467A41128F4B9C900EB75A2 /* Piece.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1467A40F28F4B9C900EB75A2 /* Piece.cpp */; };
+		1467A41428F4BA8D00EB75A2 /* UCI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1467A41228F4BA8D00EB75A2 /* UCI.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +32,21 @@
 /* Begin PBXFileReference section */
 		1467A3EB28F4B3A700EB75A2 /* Chess Engine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Chess Engine"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1467A3EE28F4B3A700EB75A2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		1467A3F628F4B3FA00EB75A2 /* bitboard.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bitboard.hpp; sourceTree = "<group>"; };
+		1467A3FB28F4B5BC00EB75A2 /* Board.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Board.cpp; sourceTree = "<group>"; };
+		1467A3FC28F4B5BC00EB75A2 /* Board.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Board.hpp; sourceTree = "<group>"; };
+		1467A3FF28F4B61800EB75A2 /* FEN.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FEN.cpp; sourceTree = "<group>"; };
+		1467A40028F4B61800EB75A2 /* FEN.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FEN.hpp; sourceTree = "<group>"; };
+		1467A40528F4B6E000EB75A2 /* Move.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Move.cpp; sourceTree = "<group>"; };
+		1467A40628F4B6E000EB75A2 /* Move.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Move.hpp; sourceTree = "<group>"; };
+		1467A40928F4B71F00EB75A2 /* PGN.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PGN.cpp; sourceTree = "<group>"; };
+		1467A40A28F4B71F00EB75A2 /* PGN.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PGN.hpp; sourceTree = "<group>"; };
+		1467A40C28F4B83100EB75A2 /* Print.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Print.cpp; sourceTree = "<group>"; };
+		1467A40D28F4B83100EB75A2 /* Print.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Print.hpp; sourceTree = "<group>"; };
+		1467A40F28F4B9C900EB75A2 /* Piece.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Piece.cpp; sourceTree = "<group>"; };
+		1467A41028F4B9C900EB75A2 /* Piece.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Piece.hpp; sourceTree = "<group>"; };
+		1467A41228F4BA8D00EB75A2 /* UCI.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UCI.cpp; sourceTree = "<group>"; };
+		1467A41328F4BA8D00EB75A2 /* UCI.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = UCI.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +80,55 @@
 			isa = PBXGroup;
 			children = (
 				1467A3EE28F4B3A700EB75A2 /* main.cpp */,
+				1467A41228F4BA8D00EB75A2 /* UCI.cpp */,
+				1467A41328F4BA8D00EB75A2 /* UCI.hpp */,
+				1467A3FE28F4B5D900EB75A2 /* Utility */,
+				1467A3F828F4B40100EB75A2 /* Representation */,
+				1467A40828F4B6FF00EB75A2 /* Move Generation */,
 			);
 			path = "Chess Engine";
+			sourceTree = "<group>";
+		};
+		1467A3F828F4B40100EB75A2 /* Representation */ = {
+			isa = PBXGroup;
+			children = (
+				1467A3FB28F4B5BC00EB75A2 /* Board.cpp */,
+				1467A3FC28F4B5BC00EB75A2 /* Board.hpp */,
+				1467A40F28F4B9C900EB75A2 /* Piece.cpp */,
+				1467A41028F4B9C900EB75A2 /* Piece.hpp */,
+				1467A40528F4B6E000EB75A2 /* Move.cpp */,
+				1467A40628F4B6E000EB75A2 /* Move.hpp */,
+				1467A3F928F4B40C00EB75A2 /* Types */,
+			);
+			path = Representation;
+			sourceTree = "<group>";
+		};
+		1467A3F928F4B40C00EB75A2 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				1467A3F628F4B3FA00EB75A2 /* bitboard.hpp */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		1467A3FE28F4B5D900EB75A2 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				1467A40C28F4B83100EB75A2 /* Print.cpp */,
+				1467A40D28F4B83100EB75A2 /* Print.hpp */,
+				1467A40928F4B71F00EB75A2 /* PGN.cpp */,
+				1467A40A28F4B71F00EB75A2 /* PGN.hpp */,
+				1467A3FF28F4B61800EB75A2 /* FEN.cpp */,
+				1467A40028F4B61800EB75A2 /* FEN.hpp */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		1467A40828F4B6FF00EB75A2 /* Move Generation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Move Generation";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +188,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1467A41128F4B9C900EB75A2 /* Piece.cpp in Sources */,
+				1467A41428F4BA8D00EB75A2 /* UCI.cpp in Sources */,
+				1467A40728F4B6E000EB75A2 /* Move.cpp in Sources */,
+				1467A3FD28F4B5BC00EB75A2 /* Board.cpp in Sources */,
+				1467A40128F4B61800EB75A2 /* FEN.cpp in Sources */,
+				1467A40B28F4B71F00EB75A2 /* PGN.cpp in Sources */,
 				1467A3EF28F4B3A700EB75A2 /* main.cpp in Sources */,
+				1467A40E28F4B83100EB75A2 /* Print.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
